@@ -14,7 +14,7 @@ const Footer = () => {
 
         <div className="footer-wrapper">
           <div className="footer-logo">
-            <h3>Portfolio Creator.</h3>
+            <img src={logo} alt="" />
             <p>4353 Delaware Avenue, San Francisco, USA</p>
             <p className="mail">
               <Mail size={18} />
