@@ -1,0 +1,63 @@
+.hero {
+  margin: 70px 0 20px 0;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-left {
+    width: 50%;
+    h2 {
+      color: #000;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 1.4;
+      span {
+        color: #ff8a56;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-family: "Roboto", sans-serif;
+      font-size: 22px;
+      color: #666666;
+      line-height: 1.5;
+      margin: 27px 0 38px 0;
+    }
+    &__buttons {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      .flex {
+        background: transparent;
+        color: black;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &:hover {
+          background: #000;
+          color: white;
+        }
+      }
+
+      button {
+        padding: 20px 25px;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        background: #000;
+        cursor: pointer;
+        transition: 0.5s ease;
+        &:hover {
+          background: transparent;
+          border: 1px solid #ddd;
+          color: #000;
+        }
+      }
+    }
+  }
+}

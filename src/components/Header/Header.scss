@@ -1,0 +1,28 @@
+.header {
+  .navbar {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 41px;
+    &-lists {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      &__list {
+        color: black;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        &:last-child {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+      }
+    }
+  }
+}
