@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
-import logo from "../../assets/Vector.svg";
+import { ReactComponent as Logo } from "../../assets/Vector.svg";
+
 import { Mail } from "lucide-react";
 
 const Footer = () => {
@@ -14,7 +15,8 @@ const Footer = () => {
 
         <div className="footer-wrapper">
           <div className="footer-logo">
-            <img src={logo} alt="" />
+            <Logo className="logo" />
+
             <p>4353 Delaware Avenue, San Francisco, USA</p>
             <p className="mail">
               <Mail size={18} />

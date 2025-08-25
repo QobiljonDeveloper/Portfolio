@@ -16,7 +16,6 @@ const Services = () => {
               <h2>{item.title}</h2>
               <p>{item.description}</p>
               <ul>
-              
                 {item.options.map((items) => (
                   <li key={items.id}> {items.title}</li>
                 ))}

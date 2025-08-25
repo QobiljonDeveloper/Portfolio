@@ -4,25 +4,91 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 41px;
+    padding: 20px 40px;
+
     &-lists {
       display: flex;
       align-items: center;
       gap: 40px;
+
       &__list {
         color: black;
         font-family: "Roboto", sans-serif;
         font-size: 18px;
         font-weight: 400;
-        &:last-child {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-        }
-        &:hover{
-            text-decoration: underline;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &:hover {
+          text-decoration: underline;
         }
       }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    &.open {
+      right: 0;
+    }
+
+    .close-btn {
+      align-self: flex-end;
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 20px;
+
+        a {
+          color: #000;
+          font-size: 18px;
+          text-decoration: none;
+
+          &:hover {
+            color: #3b5bff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .header {
+    .navbar-lists {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
     }
   }
 }
