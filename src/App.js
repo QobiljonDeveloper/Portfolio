@@ -4,15 +4,11 @@ import Partner from "./components/Partner/Partner";
 import "./scss/main.scss";
 function App() {
   return (
-    <div className="App">
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Hero />
-        <Partner />
-      </main>
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <Partner />
+    </>
   );
 }
 
