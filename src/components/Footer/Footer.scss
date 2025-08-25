@@ -44,7 +44,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        color: #ccc;
+        color: #666666;
         margin-top: 10px;
       }
     }
@@ -61,7 +61,7 @@
           margin-bottom: 10px;
 
           a {
-            color: #fff;
+            color: #666666;
             font-size: 14px;
             transition: 0.3s;
 
@@ -75,8 +75,9 @@
   }
 
   .footer-bottom {
-    border-top: 1px solid #333;
     padding-top: 20px;
+    display: flex;
+    align-items: center;
     font-size: 12px;
     color: #aaa;
 
